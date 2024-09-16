@@ -1,5 +1,4 @@
-import SearchBar from "@/components/SearchBar";
-import styles from "./page.module.scss";
+import styles from "../page.module.scss";
 import classNames from "classnames/bind";
 import Carousel from "@/components/Carousel";
 import ListSection from "@/components/ListSection";
@@ -46,7 +45,6 @@ function ProjectList() {
 export default function Home() {
   return (
     <>
-      <SearchBar containerStyle={{ marginBottom: 20 }} />
       <Carousel containerStyle={{ marginBottom: 30 }} />
       <ProfileList />
       <ProjectList />

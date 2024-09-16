@@ -91,7 +91,7 @@ interface CarouselProps {
 export default function Carousel({ containerStyle }: CarouselProps) {
   const slides: BannerData[] = BANNERS;
   const [currentIdx, setCurrentIdx] = React.useState(0);
-  const [auto, setAuto] = React.useState<boolean>(false);
+  const [auto, setAuto] = React.useState<boolean>(true);
 
   const setAutoplay = () => {
     setAuto((prev) => !prev);
