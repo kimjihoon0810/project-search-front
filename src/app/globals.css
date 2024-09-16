@@ -35,7 +35,7 @@ ul {
   justify-content: center;
   align-items: center;
   height: 40px;
-  background-color: #8c82ff;
+  background-color: #e3935e;
   padding-inline: 14px;
   font-size: 14px;
   border-radius: 8px;
@@ -52,5 +52,5 @@ ul {
 }
 
 .btn:hover {
-  background-color: #6f63f3;
+  background-color: #e3935e;
 }

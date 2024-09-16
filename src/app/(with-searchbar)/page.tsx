@@ -3,12 +3,13 @@ import classNames from "classnames/bind";
 import Carousel from "@/components/Carousel";
 import ListSection from "@/components/ListSection";
 import { PROFILES } from "@/dummy";
-import { ProfileData } from "@/types";
+import { BannerData, ProfileData } from "@/types";
 import ProfileCard from "@/components/item/ProfileCard";
+import { getBanners } from "../action/fetch-banners";
 
 const cx = classNames.bind(styles);
 
-function ProfileList() {
+async function ProfileList() {
   const profileList: ProfileData[] = PROFILES;
 
   return (
@@ -42,10 +43,12 @@ function ProjectList() {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const bannerList: BannerData[] = await getBanners();
+
   return (
     <>
-      <Carousel containerStyle={{ marginBottom: 30 }} />
+      <Carousel containerStyle={{ marginBottom: 30 }} data={bannerList} />
       <ProfileList />
       <ProjectList />
     </>

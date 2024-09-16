@@ -21,6 +21,8 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "15.0.0-rc.0",
+    "json-server": "^1.0.0-beta.2",
     "typescript": "^5"
-  }
+  },
+  "proxy": "http://localhost:3009"
 }

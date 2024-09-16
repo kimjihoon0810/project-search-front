@@ -2,7 +2,6 @@
 
 import classNames from "classnames/bind";
 import styles from "./Carousel.module.scss";
-import { BANNERS } from "@/dummy";
 import { BannerData } from "@/types";
 import React from "react";
 import "../app/styles/components.scss";
@@ -85,11 +84,11 @@ function Slide({ title, desc, slug, image, link, active }: SlideProps) {
 }
 
 interface CarouselProps {
+  data: BannerData[];
   containerStyle?: React.CSSProperties;
 }
 
-export default function Carousel({ containerStyle }: CarouselProps) {
-  const slides: BannerData[] = BANNERS;
+export default function Carousel({ data, containerStyle }: CarouselProps) {
   const [currentIdx, setCurrentIdx] = React.useState(0);
   const [auto, setAuto] = React.useState<boolean>(true);
 
@@ -104,7 +103,7 @@ export default function Carousel({ containerStyle }: CarouselProps) {
   React.useEffect(() => {
     if (!auto) return;
     const interval = setInterval(() => {
-      setCurrentIdx((prev) => (prev < slides.length - 1 ? prev + 1 : 0));
+      setCurrentIdx((prev) => (prev < data.length - 1 ? prev + 1 : 0));
     }, 3000);
 
     return () => clearInterval(interval);
@@ -115,13 +114,13 @@ export default function Carousel({ containerStyle }: CarouselProps) {
       <Navigation
         auto={auto}
         setAuto={setAutoplay}
-        dots={slides}
+        dots={data}
         currIdx={currentIdx}
         handleIndex={handleIndex}
       />
 
       <div className={cx("carousel")}>
-        {slides.map((slide, index) => {
+        {data.map((slide, index) => {
           const active = index === currentIdx;
           return (
             <Slide key={`SLIDE_${slide.title}`} {...slide} active={active} />

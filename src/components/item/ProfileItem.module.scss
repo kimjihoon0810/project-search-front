@@ -1,0 +1,29 @@
+@import "../../app/styles/variables.scss";
+
+.container {
+  display: flex;
+  gap: 10px;
+  color: $white;
+
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.container img {
+  border-radius: 4px;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+
+  & > span {
+    font-size: 14px;
+    color: lighten($main, 10%);
+  }
+}
