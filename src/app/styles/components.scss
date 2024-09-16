@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+.white_btn {
+  color: $white;
+  border: 1px solid $white;
+  border-radius: 4px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
