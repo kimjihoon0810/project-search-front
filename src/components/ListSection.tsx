@@ -7,7 +7,7 @@ const cx = classNames.bind(styles);
 interface ListSection {
   title: React.ReactNode;
   children?: React.ReactNode;
-  direction?: string;
+  direction?: "horizontal" | "vertical";
   containerStyle?: React.CSSProperties;
   gap?: number;
 }

@@ -33,6 +33,7 @@ function ProjectList() {
 
   return (
     <ListSection
+      direction="vertical"
       title={
         <>
           <b>모집중인</b> 프로젝트가 있어요
