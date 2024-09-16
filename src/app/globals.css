@@ -9,6 +9,11 @@ p {
 }
 a {
   text-decoration: none;
+  color: #212121;
+}
+
+h2 {
+  margin: 0px;
 }
 
 ul {

@@ -84,9 +84,11 @@ function Slide({ title, desc, slug, image, link, active }: SlideProps) {
   );
 }
 
-interface CarouselProps {}
+interface CarouselProps {
+  containerStyle?: React.CSSProperties;
+}
 
-export default function Carousel() {
+export default function Carousel({ containerStyle }: CarouselProps) {
   const slides: BannerData[] = BANNERS;
   const [currentIdx, setCurrentIdx] = React.useState(0);
   const [auto, setAuto] = React.useState<boolean>(false);
@@ -109,7 +111,7 @@ export default function Carousel() {
   }, [auto]);
 
   return (
-    <div className={cx("container")}>
+    <section className={cx("container")} style={containerStyle}>
       <Navigation
         auto={auto}
         setAuto={setAutoplay}
@@ -126,6 +128,6 @@ export default function Carousel() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

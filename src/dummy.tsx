@@ -42,3 +42,60 @@ export const BANNERS = [
     link: "/",
   },
 ];
+
+export const PROFILES = [
+  {
+    id: "1",
+    profile_image: "/images/sample/me.jpeg",
+    nickname: "KimG",
+    role: "frontend",
+    skills: ["javascript", "react", "next", "typescript", "spring"],
+    introduce:
+      "약 2년 동안 React와 Next기반 프론트엔드 연구원으로 근무하고 현재는 백엔드 병행을 위해 자바진영을 학습중입니다...",
+  },
+  {
+    id: "2",
+    profile_image: "/images/sample/me.jpeg",
+    nickname: "KimG",
+    role: "frontend",
+    skills: ["javascript", "react", "next", "typescript", "spring"],
+    introduce:
+      "약 2년 동안 React와 Next기반 프론트엔드 연구원으로 근무하고 현재는 백엔드 병행을 위해 자바진영을 학습중입니다...",
+  },
+  {
+    id: "3",
+    profile_image: "/images/sample/me.jpeg",
+    nickname: "KimG",
+    role: "frontend",
+    skills: ["javascript", "react", "next", "typescript", "spring"],
+    introduce:
+      "약 2년 동안 React와 Next기반 프론트엔드 연구원으로 근무하고 현재는 백엔드 병행을 위해 자바진영을 학습중입니다...",
+  },
+  {
+    id: "4",
+    profile_image: "/images/sample/me.jpeg",
+    nickname: "KimG",
+    role: "frontend",
+    skills: ["javascript", "react", "next", "typescript", "spring"],
+    introduce:
+      "약 2년 동안 React와 Next기반 프론트엔드 연구원으로 근무하고 현재는 백엔드 병행을 위해 자바진영을 학습중입니다...",
+  },
+  {
+    id: "5",
+    profile_image: "/images/sample/me.jpeg",
+    nickname: "KimG",
+    role: "frontend",
+    skills: ["javascript", "react", "next", "typescript", "spring"],
+    introduce:
+      "약 2년 동안 React와 Next기반 프론트엔드 연구원으로 근무하고 현재는 백엔드 병행을 위해 자바진영을 학습중입니다...",
+  },
+  {
+    id: "6",
+    profile_image: "/images/sample/me.jpeg",
+    nickname: "KimG",
+    role: "frontend",
+    skills: ["javascript", "react", "next", "typescript", "spring"],
+    introduce:
+      "약 2년 동안 React와 Next기반 프론트엔드 연구원으로 근무하고 현재는 백엔드 병행을 위해 자바진영을 학습중입니다...",
+  },
+];
